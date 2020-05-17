@@ -25,7 +25,7 @@ public class MediaService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        //从Intent中获取用户需要的操作，然后进一步处理
+        //从Intent中获取用户需要的操作，然后进一步处理.
         String state=intent.getStringExtra("PlayerState");
         Log.i(MediaService.class.toString(),"onStartCommand");
         if(state!=null){
